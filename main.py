@@ -1,7 +1,11 @@
-class Pessoa:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
+from modulo import Pessoa
 
-    def saudacao(self):
-        return f'Olá, meu nome é {self.nome}'
+class Professor(Pessoa):
+    def __init__(self, nome, idade, registro):
+        super.__init__(nome, idade)
+        self.registro = registro
+
+class Aluno(Pessoa):
+    def __init__(self, nome, idade, registro):
+        super.__init__(nome, idade)
+        self.registro = registro
