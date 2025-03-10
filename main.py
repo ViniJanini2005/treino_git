@@ -1,3 +1,7 @@
-print('primeiro commit')
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
 
-print('fiz uma modificação no arquivo')
+    def saudacao(self):
+        return f'Olá, meu nome é {self.nome}'
