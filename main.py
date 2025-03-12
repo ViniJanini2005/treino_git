@@ -9,3 +9,6 @@ class Aluno(Pessoa):
     def __init__(self, nome, idade, registro):
         super().__init__(nome, idade)
         self.registro = registro
+
+    def estudar(self, materia):
+        print(f'{self.nome} estudando {materia}')
