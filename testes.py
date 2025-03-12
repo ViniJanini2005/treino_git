@@ -5,3 +5,6 @@ professor = Professor('cleber', 20, 3030)
 
 print(aluno.saudacao())
 print(professor.saudacao())
+
+print(aluno.registro)
+print(professor.registro)
